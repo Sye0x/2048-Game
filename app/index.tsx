@@ -6,6 +6,8 @@ import {
 import Feather from "@expo/vector-icons/Feather";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import Board from "../components/Board";
+import Scoreboard from "@/components/scoreboard";
+
 export default function Index() {
   return (
     <View style={styles.container}>
@@ -31,8 +33,7 @@ export default function Index() {
     </View>
   );
 }
-import scoreboard from "@/components/scoreboard";
-import Scoreboard from "@/components/scoreboard";
+
 const styles = StyleSheet.create({
   container: {
     marginTop: hp(6),
