@@ -5,27 +5,29 @@ import {
 } from "react-native-responsive-screen";
 import Feather from "@expo/vector-icons/Feather";
 import AntDesign from "@expo/vector-icons/AntDesign";
+import Board from "../components/Board";
 export default function Index() {
   return (
     <View style={styles.container}>
       <View
         style={{
-          width: wp(90),
+          width: wp(100),
           flexDirection: "row",
           justifyContent: "flex-end",
           marginBottom: hp(1.5),
         }}
       >
-        <Feather
-          name="home"
+        <Feather name="home" size={24} color="black" />
+        <AntDesign
+          name="setting"
           size={24}
           color="black"
           style={{ marginHorizontal: wp(5) }}
         />
-        <AntDesign name="setting" size={24} color="black" />
       </View>
 
       <Scoreboard />
+      <Board />
     </View>
   );
 }
