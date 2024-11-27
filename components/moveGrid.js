@@ -13,7 +13,7 @@ export const moveLeft = (grid) => {
       }
     }
     newRow = newRow.filter((box) => box !== null); // Remove the merged nulls
-    const emptySpaces = Array(4 - newRow.length).fill(null); // Fill remaining with null
+    const emptySpaces = Array(4 - newRow.length).fill(null); // Fill re`maining with null
     return [...newRow, ...emptySpaces]; // Slide numbers to the left
   });
 };
