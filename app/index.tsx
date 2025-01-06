@@ -3,7 +3,7 @@
 //also the game logic is also made bt CHATGPT
 //which made me try to learn JS after getting firm grasp of JS
 //Will attempt to make this app in future
-
+//will make this in unity
 import { Text, View, StyleSheet } from "react-native";
 import {
   widthPercentageToDP as wp,
